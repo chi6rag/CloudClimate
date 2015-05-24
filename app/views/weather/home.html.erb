@@ -1,6 +1,8 @@
 <div class="weather_home">
-	<%= form_tag(weather_results_path, method: :post) do  %>
-		<%= text_field_tag :one, nil, { class: 'search_city' } %>
+	<%= form_tag(results_path, method: :post, class: 'search_city_form') do  %>
+		<%= text_field_tag :one, nil, { class: 'search_city_field' } %>
+		<input name="lat" type="hidden" value="">
+    <input name="lng" type="hidden" value="">
 		<%= submit_tag :submit %>
 	<% end %>
 </div>
