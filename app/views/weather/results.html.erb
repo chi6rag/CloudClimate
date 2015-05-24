@@ -1,0 +1,7 @@
+<h3>Right Now</h3>
+	Location: <%= @location %><br />
+  <% current_info = @info['currently'] %>
+	Today, <%= Time.at(current_info['time']).strftime('%d %b') %><br />
+	Summary: <%= current_info['summary'] %><br />
+	Temperature: <%= current_info['temperature'] %> | <%= current_info['apparentTemperature'] %>
+  <br /><br />
