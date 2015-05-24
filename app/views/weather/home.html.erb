@@ -1,0 +1,6 @@
+<div class="weather_home">
+	<%= form_tag(weather_results_path, method: :post) do  %>
+		<%= text_field_tag :one, nil, { class: 'search_city' } %>
+		<%= submit_tag :submit %>
+	<% end %>
+</div>
